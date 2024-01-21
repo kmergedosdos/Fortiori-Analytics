@@ -1,0 +1,36 @@
+.about-section-2 {
+  margin-top: 10em;
+  display: flex;
+  gap: 3em;
+  justify-content: center;
+}
+
+.about-section-2 > .header {
+  width: 40%;
+}
+
+.about-section-2 > .content {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5em;
+}
+
+@media (max-width: 900px) {
+  .about-section-2 {
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+  }
+
+  .about-section-2 > .header {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-section-2 > .content {
+    display: flex;
+    flex-direction: column;
+  }
+}

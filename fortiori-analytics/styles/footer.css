@@ -1,0 +1,27 @@
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #eaeaea;
+  border-bottom: 5px solid var(--color-primary-light);
+  padding: 1.5em 1em;
+}
+
+footer .logo > a > img {
+  width: 200px;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+footer .text {
+  color: gray;
+  font-size: 0.8em;
+}
+
+@media (max-width: 600px) {
+  footer {
+    flex-direction: column;
+    gap: 0.5em;
+    text-align: center;
+  }
+}

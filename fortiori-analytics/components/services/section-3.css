@@ -1,0 +1,112 @@
+.services-section-3 {
+  margin-top: 10em;
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+  text-align: center;
+}
+
+.services-section-3 .header h2 {
+  max-width: 700px;
+  margin: auto;
+  margin-bottom: 1em;
+}
+
+.services-section-3 .header p {
+  max-width: 500px;
+  margin: auto;
+}
+
+.services-section-3 .content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  gap: 2.5em;
+}
+
+.services-section-3 .content__item {
+  flex: 1;
+  max-width: 400px;
+  border-radius: 1em;
+  padding: 3em;
+  background-color: #f7f8fc;
+  box-shadow: -15px -15px 20px rgba(255, 255, 255, 0.8),
+    15px 15px 20px rgba(57, 65, 124, 0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.5em;
+}
+
+.services-section-3 .content__item.item-2 {
+  background-image: linear-gradient(
+    51deg,
+    #0074bc 50%,
+    #0093d4 75%,
+    #00b1ec 100%
+  );
+  color: var(--color-white);
+}
+
+.services-section-3 .content__item__texts {
+  flex: 1;
+}
+
+.services-section-3 .content__item h4 {
+  margin-bottom: 1em;
+}
+
+.services-section-3 .content__item.item-2 h4 {
+  color: var(--color-white);
+}
+
+.services-section-3 .content__item ul {
+  text-align: left;
+  list-style-type: none;
+  padding: 0;
+  padding-left: 1em;
+}
+
+.services-section-3 .content__item ul > li {
+  position: relative;
+  line-height: 1.5em;
+  margin-bottom: 1em;
+}
+
+.services-section-3 .content__item ul > li > i {
+  position: absolute;
+  left: 0;
+  transform: translateX(-100%) translateY(1px);
+  padding-right: 0.75em;
+  color: #7be1bc;
+}
+
+.services-section-3 .content__item button {
+  margin: auto;
+  padding: 1em 0;
+}
+
+.services-section-3 .content__item.item-2 button > a {
+  background-color: var(--color-white);
+  color: var(--color-black);
+}
+
+.services-section-3 .content__item.item-2 button > a:hover {
+  background-color: #f2f2f2;
+}
+
+@media (max-width: 900px) {
+  .services-section-3 .content__item {
+    padding: 2em;
+  }
+}
+
+@media (max-width: 768px) {
+  .services-section-3 .content {
+    flex-direction: column;
+  }
+
+  .services-section-3 .content__item {
+    margin: auto;
+  }
+}

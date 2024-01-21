@@ -1,0 +1,139 @@
+@import url("../styles/footer.css");
+@import url("../styles/header.css");
+@import url("../styles/page.css");
+@import url("../components/about/section-1.css");
+@import url("../components/about/section-2.css");
+@import url("../components/about/section-3.css");
+@import url("../components/about/section-4.css");
+@import url("../components/about/section-5.css");
+@import url("../components/services/section-1.css");
+@import url("../components/services/section-2.css");
+@import url("../components/services/section-3.css");
+@import url("../components/services/section-4.css");
+@import url("../components/home/section-1.css");
+@import url("../components/home/section-2.css");
+@import url("../components/home/section-3.css");
+@import url("../components/home/section-4.css");
+@import url("../components/contact/section-1.css");
+@import url("../components/contact/form.css");
+
+:root {
+  --color-white: white;
+  --color-black: #101c2f;
+  --color-primary: #0070c0;
+  --color-primary-light: #00b0f0;
+  --max-width: 1440px;
+  --height-header: 70px;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  color: var(--color-black);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0.25em;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  color: var(--color-black);
+}
+
+h1 {
+  font-size: 2.8rem;
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.6rem;
+}
+
+h5 {
+  font-size: 1.2rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+p,
+a,
+button,
+input,
+label {
+  font-size: inherit;
+}
+
+p {
+  margin-bottom: 0.5em;
+  line-height: 1.6em;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a.link {
+  color: var(--color-primary-light);
+}
+a.link:hover {
+  color: var(--color-primary);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+}
+
+button {
+  width: fit-content;
+  border: none;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.button {
+  border-radius: 2em;
+  padding: 1em 2em;
+  color: var(--color-white);
+  background-color: var(--color-primary-light);
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background-image: none;
+  background-color: var(--color-primary);
+}

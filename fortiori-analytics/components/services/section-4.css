@@ -1,0 +1,18 @@
+.services-section-4 {
+  padding-top: 10em;
+  padding-bottom: 5em;
+  display: flex;
+  gap: 3em;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .services-section-4 {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .services-section-4 > button {
+    margin: auto;
+  }
+}
